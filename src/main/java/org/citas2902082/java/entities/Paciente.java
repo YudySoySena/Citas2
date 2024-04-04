@@ -1,6 +1,6 @@
 package org.citas2902082.java.entities;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Paciente {
     public int id;
@@ -10,17 +10,14 @@ public class Paciente {
     public int numeroIdentificación ;
     public String correoElectronico;
     public int celular;
-    public LocalDateTime fechaNacimiento;
+    public LocalDate fechaNacimiento;
     public Double altura;
     public Double peso;
     public TipoSangre tipoSangre ;
     public char factorRH;
     
-    public Paciente() {
-    }
-
     public Paciente(int id, String nombres, String apellidos, TipoIdentificacion tipoIdentificacion,
-            int numeroIdentificación, String correoElectronico, int celular, LocalDateTime fechaNacimiento, Double altura,
+            int numeroIdentificación, String correoElectronico, int celular, LocalDate fechaNacimiento, Double altura,
             Double peso, TipoSangre tipoSangre, char factorRH) {
         this.id = id;
         this.nombres = nombres;
@@ -35,6 +32,7 @@ public class Paciente {
         this.tipoSangre = tipoSangre;
         this.factorRH = factorRH;
     }
+
 
     public int getId() {
         return id;
@@ -92,11 +90,11 @@ public class Paciente {
         this.celular = celular;
     }
 
-    public LocalDateTime getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(LocalDateTime fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
